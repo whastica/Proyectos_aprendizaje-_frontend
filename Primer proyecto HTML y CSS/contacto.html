@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Primer proyecto</title>
+    </head>
+    <body>
+        <!--encabezado-->
+        <h1>ArtPink</h1>
+        
+        <!--menú-->
+        <ul>
+            <!--Con la etiqueta a linkamos-->    
+            <li><a href="index.html" title="Inicio">Inicio</a></li>
+            <li><a href="contenido.html" title="Contenido">Contenido</a></li>
+             <!--Con la propiedad target seleccionamos si queremos que se abra en otra pestaña-->  
+            <li><a href="contacto.html" title="Contacto" target="_blank">Contacto</a></li>
+        </ul>
+
+        <hr/>
+
+        <!--contenido contacto-->
+        <h2>Contacto</h2>
+
+        <div style="border: 1px solid #ccc; padding: 10px;">
+            <form action="/submit_form" method="post">
+                <p>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="correo">correo:</label>
+                    <input type="text" id="correo" name="correo" required>
+                </p>
+                <p>
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </p>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
